@@ -55,17 +55,80 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Design" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
+	  <Reference Include="Microsoft.CSharp" />
+	  <Reference Include="Microsoft.Dynamics.AX.Metadata">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.AX.Metadata.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Dynamics.AX.Metadata.Core">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.AX.Metadata.Core.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Dynamics.AX.Metadata.Extensions">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.AX.Metadata.Extensions.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Dynamics.AX.Metadata.Modeling">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.AX.Metadata.Modeling.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Dynamics.AX.Metadata.Storage">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.AX.Metadata.Storage.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Dynamics.Framework.Tools.ApplicationExplorer.17.0">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.Framework.Tools.ApplicationExplorer.17.0.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Dynamics.Framework.Tools.AutomationObjects.17.0">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.Framework.Tools.AutomationObjects.17.0.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Dynamics.Framework.Tools.Configuration.17.0">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.Framework.Tools.Configuration.17.0.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Dynamics.Framework.Tools.Core.17.0">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.Framework.Tools.Core.17.0.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Dynamics.Framework.Tools.Extensibility.17.0">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.Framework.Tools.Extensibility.17.0.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Dynamics.Framework.Tools.Integration">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.Framework.Tools.Integration.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Dynamics.Framework.Tools.LabelEditor.17.0">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.Framework.Tools.LabelEditor.17.0.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Dynamics.Framework.Tools.Labels.Resolvers">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.Framework.Tools.Labels.Resolvers.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Dynamics.Framework.Tools.MetaModel.17.0">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.Framework.Tools.MetaModel.17.0.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Dynamics.Framework.Tools.MetaModel.Core.17.0">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.Framework.Tools.MetaModel.Core.17.0.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Dynamics.Framework.Tools.ProjectSupport.17.0">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.Framework.Tools.ProjectSupport.17.0.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Microsoft.Dynamics.Framework.Tools.ProjectSystem.17.0">
+		  <HintPath>C:\Program Files\Microsoft Visual Studio\18\Professional\Common7\IDE\Extensions\dtauuvyh.2er\Microsoft.Dynamics.Framework.Tools.ProjectSystem.17.0.dll</HintPath>
+	  </Reference>
+	  <Reference Include="PresentationCore" />
+	  <Reference Include="PresentationFramework" />
+	  <Reference Include="System" />
+	  <Reference Include="System.ComponentModel.Composition" />
+	  <Reference Include="System.Data" />
+	  <Reference Include="System.Design" />
+	  <Reference Include="System.Drawing" />
+	  <Reference Include="System.Runtime.Serialization" />
+	  <Reference Include="System.Security" />
+	  <Reference Include="System.Windows" />
+	  <Reference Include="System.Windows.Forms" />
+	  <Reference Include="System.Xaml" />
+	  <Reference Include="System.Xml" />
+	  <Reference Include="System.Xml.Linq" />
+	  <Reference Include="WindowsBase" />
+	  <Reference Include="WindowsFormsIntegration" />
+	  <!-- 在 .csproj 文件中手动添加引用 -->
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.0.32112.339" ExcludeAssets="runtime" NoWarn="NU1604" />
     <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.14.2120" NoWarn="NU1604" />
+	  
   </ItemGroup>
   <ItemGroup>
     <VSCTCompile Include="HMTBasePackage.vsct">
